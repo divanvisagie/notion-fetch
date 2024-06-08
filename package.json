@@ -21,6 +21,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@types/node": "^20.14.2"
   },
   "pkg": {
     "targets": [
