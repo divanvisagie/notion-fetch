@@ -1,0 +1,33 @@
+{
+  "name": "notion-fetch",
+  "version": "0.0.1",
+  "description": "A tool for fetching stuff from notion",
+  "main": "index.js",
+  "repository": "git@github.com:divanvisagie/notion-fetch.git",
+  "author": "Divan Visagie <me@divanv.com>",
+  "license": "GPLv3",
+  "private": false,
+  "bin": {
+    "notion-fetch": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "compile": "pkg . --out-path bin --compress"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+  },
+  "pkg": {
+    "targets": [
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
+    "scripts": "dist"
+  }
+}
